@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan CSS - Artikel HTML</title>
+        <link rel="stylesheet" href="latihan_css.css">
+    </head>
+
+        <div class="margin">
+        <article class="padding">
+            <div class="penulis" display :block>
+                <br>
+                <a href="index.html" target="_blank">
+                    <img class="foto_profile" src= "55009.jpg" style="width: 150px;height: 150px;border-radius: 100%;" alt="Foto Penulis">
+                </a>
+                <p>
+                    Nama : Made Marshall Vira Deva
+                    <br>
+                    NIM         : 2105551093
+                    <br>
+                    Mata Kuliah : Pemrograman Internet - E
+                    <br>
+                    <a href="Latihan_CSS_Biodata.html" target="_blank">
+                        <span>Profile</span>
+                    </a>
+                </p>
+            </div>
+                <hr size="4" noshade>
+        
+                <h4>Belajar HTML dari Nol!
+                    <br>"Pengenalan Dasar HTML" </h4>
+                <center>
+                    <img src="logo html.png" alt="">
+                </center>
+        
+        
+                <hr>
+                <h1>HTML</h1>
+                <hr> 
+                    <div>
+                        <p>HTML (HyperText Markup Language) adalah suatu bahasa yang menggunakan tanda-tanda tertentu (tag) untuk menyatakan kode-kode yang harus ditafsirkan oleh browser agar halaman tersebut dapat ditampilkan secara benar.
+                            Secara umum, fungsi HTML adalah untuk mengelola serangkaian data dan informasi sehingga suatu dokumen dapat diakses dan ditampilkan di Internet melalui layanan web.</p>
+                    
+                </div>
+                <hr>
+                <h1>PENGANTAR</h1>
+                <hr> 
+                    <div>
+                        <p>Aplikasi Web atau disebut WebApps  merupakan kategori perangkat lunak yang berpusat pada jaringan komputer. Web saat ini lebih dari sekedar kumpulan file Hypertext yang saling terhubung untuk menunjukkan informasi-informasi tertentu melalui grafis-grafis  terbatas namun terkait juga dengan  database dan aplikasi-aplikasi lainnya.</p>
+                        <ul typed="square">
+                            <li>HTML merupakan bahasa markup standar untuk membuat halaman web</li> 
+                            <li>Struktur dari halaman web menggunakan markup</li> 
+                            <li>HTML adalah blok-blok yang membangun halaman HTML</li>
+                            <li>Elemen-elemen HTML direpresentasikan melalui tags</li>
+                            <li>Web Browser tidak menampilkan tag HTML, tetapi menggunakannya untuk me-render konten halaman web </li>
+                            <li>Editor yang dapat digunakan untuk membuat halaman HTML antara lain: Notepad, Notepad++,Sublime,Dreamweaver,Atom,dll</li>
+                        </ul>
+                    </div>
+                    
+                <hr>
+        
+                <h1>Format HTML </h1>
+                <hr>
+        
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Belajar HTML #01&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Hello World!&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                
+                <hr>
+                <h1 style="color:rgb(250, 250, 250); background-color: rgb(45, 55, 35);">Struktur Dokumen HTML</h1>
+                <hr>
+                <h2>A.   HTML</h2>
+                <div>
+<code>
+    <pre>
+    &lt;html lang="en"&gt;
+    </pre>
+</code>      
+                <p>Tag <html> di atas merupakan tag yang wajib ada pada setiap dokumen HTML, dan ditutup dengan menggunakan tag </html>. Dimana tag ini berfungsi untuk memberi tahu web browser, bahwa objek yang terdapat di antara kedua tag tersebut merupakan dokumen HTML. Pada tag ini juga memberikan atribut lang="en" untuk menyatakan bahwa konten yang berada di dalam dokumen HTML ini akan menggunakan bahasa inggris</p>  
+        
+            
+                </div>
+                
+                <h2>B.   HEAD</h2>
+                <div>
+                    <p>Tag &lt;HEAD&gt; tugasnya adalah memberikan informasi tentang dokumen, maksudnya didalam tag <head> kita bisa menambahkan tag-tag yang biasanya digunakan untuk memberikan informasi berupa penulis, judul dokumen, kata kunci pada dokumen dan masih banyak lagi informasi yang bisa di tambahkan pada tag ini.</p>
+<code>
+    <pre>
+    &lt;head&gt;
+        &lt;title&gt;Judul Halaman Web&lt;title&gt;
+    &lt;/head&gt;
+    </pre>
+</code>
+                        
+                        <ul typed="circle">
+                        <li>Bagian Header dalam dokumen HTML</li>
+                        <li>Biasanya berisikan judul dari halaman web </li>
+                    </ul>
+                </div>
+        
+                <h2>C.   BODY</h2>
+                    <p>Tag &lt;BODY&gt; tugasnya adalah memberikan isi dari suatu dokumen yang akan ditampilkan oleh web browsernya.</p>
+<code>
+    <pre>
+    &lt;body&gt;
+        &lt;p&gt;Halo, selamat pagi&lt;p&gt;
+    &lt;/body&gt;
+    </pre>
+</code>
+                <ul typed="square">
+                    <li>Bagian isi dari dokumen HTML </li>
+                    <li>Dapat disisipkan teks, gambar, video maupun link</li>    
+                    <li>Isi yang ada di dalam body akan ditampilkan pada halaman web</li>    
+                    <li>Tag Body dapat pula ditambahkan atribut BGCOLOR untuk pewarnaan background dan warna tulisan dengan TEXT diisi nilai warna</li>    
+                    <li> &lt;BODY BGCOLOR="yellow" TEXT="red"&gt; &lt;/BODY&gt;&lt;/li&gt; </li>
+                </ul>
+        
+                <hr>
+                <h1>TAG, ELEMEN & ATRIBUT HTML</h1>
+                <hr>
+        
+                <H2>Apa itu tag?</H2>
+                <div>
+                    <p>Tag adalah sebuah <b>penanda awalan</b> dan akhiran dari sebuah elemen di HTML. Tag dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut.
+                        <br> Contoh: &lt;p&gt;, &lt;a&gt;, &lt;body&gt;, &lt;head&gt;, dan sebagainya.
+                        <br> Tag selalu ditulis berpasangan. Ada tag pembuka dan ada tag penutupnya. Namun, ada juga beberapa tag yang tidak memiliki pasangan penutup. Tag penutup ditulis dengan menambahkan garis miring (/) di depan nama tag./>
+                        <center>
+                            <br><img src="tag.png" alt="">
+                        </center>
+                    
+                        <p>Berikut merupakan tag-tag dasar yang paling sering digunakan </p>
+                        <center>
+                        <br><img src="contoh tag.png" alt="">
+                        </center>
+                        <p>Penulisan tag disarankan menggunakan huruf kecil, karena huruf kecil lebih mudah untuk diketik dan juga akann membuat kode HTLN terlihat lebih rapi dan bersih</p>
+                        <ul type="circle"> 
+                            <li>Contoh penulisan tag yang <b> Bagus</b></li>
+<code>
+    <pre>
+    &lt;body&gt;
+    &lt;p&gt;Belajar HTML &lt;P&gt;
+    &lt;/body&gt;
+    </pre>
+</code>            
+            <li>Contoh penulisan tag yang <b>Buruk</b></l>
+<code>
+    <pre>
+    &lt;body&gt;
+    &lt;P&gt;Belajar HTML &lt;p&gt;
+    &lt;/body&gt;
+    </pre>
+</code>                         
+                        </ul>    
+                </div>
+                    
+                <h2>Apa Itu Elemen?</h2>
+                <div>
+                    <p>Elemen dalam HTML adalah sebuah komponen yang menyusun dokumen HTML. Elemen kadang juga disebut sebagai node, karena ia merupakan salah satu jenis node yang menyusun dokumen HTML dalam diagram HTML tree.</p>
+                    <center>
+                        <img src="elemen tree.png" alt="">
+                    </center>
+                    <p>Pada diagram tersebut, terdapat tiga macam node.. yakni: Node elemen, Node atribut, dan Node teks.
+                        Elemen dibentuk dari tag pembuka, isi tag, dan tag penutup. Kadang juga ditambahkan beberapa atribut.
+                    <br>Contoh :
+                    </p>
+                    <center>
+                        <img src="contoh elemen.png" alt="">
+                    </center>
+        
+                <h2>Elemen Dasar HTML</h2>
+                <h2>1.   Paragraf</h2>
+                <div>
+                    <p>Paragraf adalah kumpulan dari beberapa kalimat. Pada web, Paragraf biasanya digunakan untuk menampilkan teks atau artikel. Paragraf pada HTML dibuat dengan tag &lt;p&gt;. Selain tag ini, ada juga tag pendukung lain seperti &lt;div&gt;, &lt;hr&gt;, &lt;br&gt;, dan &lt;pre&gt;.</p>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Paragraf di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Ini adalah sebuah paragraf yang berisi beberapa kalimat.
+            Saya sedang belajar HTML di Petani Kode. Saat ini Sedang,
+            Belajar tentang paragraf.&lt;/p&gt;
+            &lt;p&gt;Paragraf adalah kumpulan dari beberapa kalimat yang saling
+            mendukung. Punya ide pokok sebagai dasar dari paragraf itu sendiri.&lt;/p&lt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>   
+        
+        
+                    <center>
+                        <img src="persegi element.png" alt="">
+                    </center>
+                    <p>Pada contoh di atas, terdapat satu elemen < p> dengan atribut align="center" dan memiliki isi berupa teks, yakni Hello World!.
+                        Elemen tidak selalu berisi teks, kadan ia juga akan berisi elemen lain. Ini biasanya kita sebut dengan nested element atau elemen di dalam elemen.
+                    <br>Apabila digambarkan akan terlihat sebagai berikut:</p>
+        
+        
+                <h2>Atribut Untuk Paragraf</h2>
+                <p>Biasanya paragraf ditambahkan dengan beberapa atribut seperti align, id, class, dll.
+                <br> Contoh:</p>    
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Paragraf di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p align="center"&gt;Ini adalah sebuah paragraf yang berisi beberapa kalimat.
+            Saya sedang belajar HTML di Petani Kode. Saat ini Sedang,
+            Belajar tentang paragraf.&lt;/p&gt;
+            &lt;p align"right" &gt;Paragraf adalah kumpulan dari beberapa kalimat yang saling
+            mendukung. Punya ide pokok sebagai dasar dari paragraf itu sendiri.&lt;/p&lt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                
+                <h2>Tag &lt;br&gt; untuk Membuat Paragraf</h4>
+                <p>Tag &lt;br&gt; sebenarnya bukanlah tag untuk membuat paragraf. Tapi tag ini, biasanya digunakan untuk membantu tag &lt;p&gt;.
+                    Fungsi utama tag &lt;br&gt; adalah untuk membuat baris baru.
+                    <br>Contoh:
+                    <br>Misalkan kita ingin menampilkan pantun, bisa saja kita buat seperti ini di dengan tag &lt;p&gt;.</p> 
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;title&gt;Tutorial Paragraf di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt; Rambut berantakan tak pernah di sisir &lt;br /&gt;
+                Orang melihat tertawa kesenangan &lt;br /&gt;
+                Pengangguran berserakan seperti pasir&lt;br /&gt;
+                Kurang usaha dan keterampilan &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+        
+                <h2>Tag &lt;hr&gt; untuk Membuat Paragraf</h2>
+                <p>Sama seperti tag &lt;br&gt;, tag &lt;hr&gt; juga bukanlah tag untuk membuat paragraf.
+                    Tag &lt;hr&gt; merupakan tag yang digunakan untuk membuat garis lurus secara horizontal (horizontal rule). Biasanya digunakan untuk memisahkan beberapa konten atau paragraf.
+                    <br>Contoh:</p>
+        
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Paragraf di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Ini adalah sebuah paragraf yang berisi beberapa kalimat.
+            Saya sedang belajar HTML di Petani Kode. Saat ini Sedang,
+            Belajar tentang paragraf.&lt;/p&gt;
+            &lt;br&gt;
+            &lt;p&gt;Paragraf adalah kumpulan dari beberapa kalimat yang saling
+            mendukung. Punya ide pokok sebagai dasar dari paragraf itu sendiri.&lt;/p&lt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+        
+                <h2>Tag &lt;pre&gt; untuk Membuat Paragraf</h2>
+                <p>Pada kasus tertentu, kita ingin menampilkan paragraf dengan format yang lebih spesifik. Contohnya seperti pantun dan puisi yang paragrafnya diulis dengan garis baru dan juga indentasi.
+                    Hal ini bisa dilakukan dengan bantuan tag &lt;br&gt;. Namun ada juga tag lain yang bisa jadi alternatif, yakni tag &lt;pre&gt;.
+                    Tag &lt;pre&gt; (preformatting) merupakan tag yang digunakan untuk menampilkan teks atau paragraf dalam format yang sudah kita tentukan di HTML.
+                    <br> Contoh:</p>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Paragraf di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Ini adalah sebuah paragraf yang berisi beberapa kalimat.&lt;/h1&gt;
+            &lt;p&gt;Ini adalah sebuah paragraf yang berisi beberapa kalimat.&lt;/p&gt;
+        &lt;pre&gt;
+            Saya sedang belajar HTML di Petani Kode. Saat ini Sedang,
+            Belajar tentang paragraf.
+        &lt;/pre&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+        
+                <p>Paragraf yang kita buat di dalam kode HTML akan ditampilkan dengan format yang sama seperti yang kita tulis di sana.
+                    Biasanya tag &lt;pre&gt; sering digunakan untuk menampilkan source code. Karena, tag ini menggunakan font Monospace atau Courier New (di Windows).</p>
+                
+                <h2>2.   Heading</h2>
+                <p>Heading adalah sebuah judul yang biasanya diberikan pada halaman atau beberapa bagian dari artikel.
+                    Judul pada HTML dapat kita buat dengan tag &lt;h1&gt; sampai &lt;h6&gt;. Tag &lt;h1&gt; digunakan pada judul level pertama. Lalu tag lainnya digunakan pada sub heading atau level berikutnya.
+                    Masing-masing judul akan ditampilkan dengan ukuran teks yang bebeda. Tag &lt;h1&gt; adalah yang paling besar, dan tag &lt;h6&gt; paling kecil. 
+                    <br> Contoh:</p>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;title&gt;Tutorial Heading di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt; Heading 1&lt;/h1&gt;
+            &lt;h2&gt; Heading 1&lt;/h2&gt;
+            &lt;h3&gt; Heading 1&lt;/h3&gt;
+            &lt;h4&gt; Heading 1&lt;/h4&gt;
+            &lt;h5&gt; Heading 1&lt;/h5&gt;
+            &lt;h6&gt; Heading 1&lt;/h6&gt;
+            &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                <p>Berikut merupakan perbedaan dari heading 1 hingga 6</p>
+                <center>
+                    <img src="heading.png" alt="">
+                </center>
+                    
+                <h2>3.   Komentar</h2>
+                <p>Komentar adalah elemen yang akan diabaikan oleh browser. Ia tidak akan ditampilkan di dalam web. Komentar biasanya digunakan untuk memberikan informasi tambahan pada kode HTML dan kadang juga digunakan untuk menon-aktifkan beberapa kode HTML</p>
+                <center>
+                    <img src="komentar.png" alt="">
+                </center>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Membuat Komentar di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;!-- Ini adalah Komentar --&gt;
+            &lt;p&gt; Hallo Gaes&lt;/p&gt;
+            &lt;!-- Ini juga Komentar 
+            hanya saja ditulis dalam 2 baris--&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+        
+                <hr>
+                <h2>Apa itu Atribut?</h2>
+                <div>
+                    <p>Atribut adalah kata khusus yang berada di dalam tag pembuka. Atribut juga disebut sebagai modifier yang akan menentukan perliaku dari elemen.</p>
+                    
+                    <center>
+                        <img src="atribut.png" alt="">
+                    </center>
+                    <p>Atribut dapat ditambahkan pada elemen manapun. Ada juga elemen yang mewajibkan menggunakan atribut seperti elemen < a>, < img>, < video>, dll
+                    <br>Contoh : </p>
+<code>
+    <pre>
+    &lt;a href="https://petanikode.com">Petanikode.com&lt;/a&gt;
+    </pre>
+</code>
+    <p>Tag &lt;a&gt; adalah tag untuk membuat link. Tag ini mewajibkan menambahkan atribut <b>href</b>  untuk menyatakan halaman tujuan dari link.
+        <br>Jumlah atribut pada elemen bisa lebih dari satu.</p>
+<code>
+    <pre>
+    &lt;a href="https://petanikode.com">Petanikode.com&lt;/a&gt;
+    </pre>
+</code>
+                    <p>Atribut <b>src</b> adalah atribut khusus untuk tag &lt;img&gt; yang fungsinya untuk menentukan gambar yang akan ditampilkan. Lalu atrubut <b>width</b> dan <b>height</b> adalah atribut yang mengatur ukurannya.</p> 
+                </div>
+        
+                <h2>Text Formating</h2>
+                <h2>1.   Font</h2>
+                <p>Pada HTML kita dapat mengganti font dengan menggunakan atribut Style seperti contoh HTML sebelumnya. Jenis font tersebut bisa Anda ganti di manapun, baik di heading ataupun paragraf. Berikut contoh penulisannya:</p>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Membuat Komentar di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1 style="font-family:century gothic;"&gt;Ganti&lt;/h1&gt;
+            &lt;p style="font-family:verdana;"&gt;Tulisan&lt;/p&gt;
+            &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+        
+                <p>Selain tipe font kita juga dapat mengantur ukuran font. Kita bisa langsung mengatur ukuran font yang kita inginkan. Contohnya sebagai berikut</p>        
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Membuat Komentar di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p style="font-size:56px;"&gt;Ganti&lt;/p&gt;
+            &lt;p style="font-size:36px"&gt;Tulisan&lt;/p&gt;
+            &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>   
+                <p>Hasilnya adalah sebagai berikut</p>
+                <center>
+                    <img src="size tulisan.png" alt="">      
+                </center>
+        
+                <p>Selain ukuran, warna dari font juga bisa diganti sesuai dengan keinginan kita. Caranya adalah menggunakan atribut style kemudian menulis warna yang diinginkan. contohnya adalah sebagai berikut</p>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Membuat Komentar di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p style="style="color:red;"&gt;Marshalllt;/p&gt;
+            &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code> 
+                <p>Hasilnya adalah sebagai berikut</p>
+                <center>
+                    <img src="ganti warna.png" alt="">
+                </center>
+                
+                <h2>Align</h2>
+                <div>
+                    Teks alignment atau yang biasa disebut dengan posisi teks, adalah cara mengubah posisi tek pada html. Berikut merupakan beberapa contoh dalam menggunakan text alignment
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Teks Alignment di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1 style="text-align:center;"&gt;Center Heading&lt;/h1&gt;
+            &lt;h1 style="text-align:right;"&gt;Right Heading&lt;/h1&gt;
+            &lt;h1 style="text-align:left;"&gt;Left Heading&lt;/h1&gt;
+            &lt;p style="text-align:justify;"&gt;
+            Ini teks justify Ini teks justify Ini teks justify Ini teks justify 
+            Ini teks justify Ini teks justify Ini teks justify Ini teks justify 
+            Ini teks justify Ini teks justify Ini teks justify Ini teks justify 
+            Ini teks justify 
+            &lt;/p&gt;
+            &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code> 
+        
+                <p>Berikut merupakan hasil eksekusinya</p>
+                <center>
+                    <img src="letak tekss.png" alt="">
+                </center>
+        
+                </div>
+                
+                <h2>Penggunaan Bold, Underline, dan Italic</h2>
+                <div>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Bold, Underline dan Italic di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Ini adalah contoh penggunaan &lt;b&gt;bold&lt;b&gt; &lt;u&gt;underline&lt;u&gt; dan &lt;i&gt;italic&lt;i&gt; sekian &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>      
+                <p>Berikut merupakan hasil eksekusinya</p>
+                <center>
+                    <img src="contoh bold.png" alt="">
+                </center>
+                </div>
+        
+        
+                <p>Berikut merupakan tabel dari beberapa tag text Formating</p>
+                <center>
+                    <img src="format teks.png" alt="">
+                </center>
+        
+                <hr>
+                <h1>List pada HTML</h1>
+                <hr>
+        
+                <div>
+                    <p>List merupakan bentuk yang umum yang biasa digunakan untuk menguraikan daftar sesuatu.
+                    <br>Dalam HTML ada tiga macam jenis list yang bis digunakan:</p>
+                    <ol type="1">
+                        <li> <b>Ordered List</b> adalah list yang terurut;</li>
+                        <li> <b>Unordered List</b> adalah list yang tak terurut;</li>
+                        <li> <b>Descriptiona List</b> adalah list yang berisi definisi;</li>
+                    </ol>
+        
+                <h2>1.   Ordered List HTML</h2>
+                <p>Ordered list dibuat dengan tag &lt;ol&gt;. Lalu di dalamnya diisi dengan item-item yang akan dimasukkan ke dalam list. Item dibuat dengan tag &lt;li&gt; (list item).</p>
+                    <center>
+                        <img src="ol.png" alt="">
+                    </center>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Ordered List pada HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Buah Favoritku: &lt;/h1&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                <center>
+                    <img src="ol contoh.png" alt="">
+                </center>
+                
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Ordered List dengan atribut type pada HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;List dengan type alfabet: &lt;/h1&gt;
+            &lt;ol type="a"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;h1&gt;List dengan type alfabet (Kapital): &lt;/h1&gt;
+            &lt;ol type="A"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;h1&gt;List dengan type romawi: &lt;/h1&gt;
+            &lt;ol type="i"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ol&gt;
+
+            &lt;h1&gt;List dengan type romawi (kapital): &lt;/h1&gt;
+            &lt;ol type="I"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                <p>Berikut merupakan hasil eksekusinya </p>
+                <center>
+                    <img src="list beda.png" alt="">
+                </center>
+
+                <h2>2.   Unordered List HTML</h2>
+                <p>Unordered list adalah list yang tak terurut yang menggunakan simbol-simbol pada item-nya. Unordered list dibuat dengan tag &lt;ul&gt; dan untuk item-nya dibuat juga dengan tag &lt;li&gt;.</p>
+                <center>
+                    <img src="ul.png" alt="">
+                </center>
+
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Unordered List pada HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Buah Favoritku: &lt;/h1&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+
+                <center>
+                    <img src="ul contoh.png" alt="">
+                </center>
+
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Unrdered List pada HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;List berbentuk square &lt;/h1&gt;
+            &lt;ul type="square"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ul&gt;
+        
+            &lt;h1&gt;List berbentuk circle: &lt;/h1&gt;
+            &lt;ul type="circle"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;h1&gt;List dengan type none: &lt;/h1&gt;
+            &lt;ul type="none"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ul&gt;
+        
+            &lt;h1&gt;List dgn type disc: &lt;/h1&gt;
+            &lt;ul type="disc"&gt;
+                &lt;li&gt;Jeruk&lt;/li&gt;
+                &lt;li&gt;Durian&lt;/li&gt;
+                &lt;li&gt;Pisang&lt;/li&gt;
+                &lt;li&gt;Pepaya&lt;/li&gt;
+                &lt;li&gt;Mangga&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+        
+                <center>
+                    <img src="ul contoh2.png" alt="">
+                </center>
+        
+                <h2>3.   Description List HTML</h2>
+                <p>Description List adalah list yang berisi deksripsi atau penjelasan dari sesuatu.
+                <br> Ada tiga tag yang digunakan untuk membuat description list:
+                    <ul>
+                        <li>&lt;dl&gt; (description list) tag untuk memulai description list;</li>
+                        <li>&lt;dt&gt; (description term) tag untuk membuat kata yang akan dideskripsikan;</li>
+                        <li>&lt;dd&gt; (description description) tag untuk membuat penjelasan dari kata.</li>
+                    </ul>
+                    Format penulisannya seperti ini:</p>
+                
+                    <center>
+                        <img src="dl.png" alt="">
+                    </center>
+        
+        
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Description List pada HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Daftar istilah: &lt;/h1&gt;
+            &lt;dl&gt;
+                &lt;dt&gt;Kopi&lt;/dt&gt;
+                &lt;dd&gt;Sebuah minuman berwarna hitam. Menurut pendapat lain kopi adalah air yang dimasak sampai gosong.&lt;/dd&gt;
+                &lt;dt&gt;Kopi Black Magic&lt;/dt&gt;
+                &lt;dd&gt;Kopi hitam atau kopi tradisional yang dibuat dengan mantra-mantra.&lt;/dd&gt;
+                &lt;dt&gt;White Coffee&lt;/dt&gt;
+                &lt;dd&gt;Kopi berwarna putih, kandungan kafeinnya sedikit.&lt;/dd&gt;
+                &lt;dt&gt;Kopi++&lt;/dt&gt;
+                &lt;dd&gt;Kopi ini mampu meningkatkan imajinasi 99 kali lipat.&lt;/dd&gt;
+                &lt;/dl&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                <center>
+                    <img src="contoh dl.png" alt="">
+                </center>
+                <hr>
+                </div>
+        
+                <h1">Menambahkan Gambar di HTML</h1>
+                <hr>
+                <div>
+                    <p>Gambar dapat kita tambakan di HTML dengan menggunakan tag &lt;img&gt;. Tag ini memiliki atribut wajib, yakni src.
+                        Jika kita tidak mengisi atribut src, maka gambar tidak akan ditampilkan.</p>
+                <center>
+                    <img src="gambar html.png" alt="">
+                </center>
+                
+                <p>Alamat URL gambar pada atribut src dapat berupa URL maupun alamat path. Lalu tag &lt;img&gt; harus ditutup dengan menambahkan garis miring.</p>
+                
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Menambah Gambar di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Berikut merupakan contoh gambar &lt;/p&gt;
+            &lt;p&gt;img src="laut.jfif" 
+            &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                <center>
+                    <img src="gambar laut.png" alt="">
+                </center>    
+            
+                <h2>Mengatur Ukuran Gambar</h2>
+                <p>Dalam mengatur ukuran gambar kita dapat menggunakan atribut <b>width</b> dan <b>height</b>
+                Kedua atribut ini dapat digunakan untuk mengatur lebar dan tinggi gambar.</p>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Menambah Gambar di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Berikut merupakan contoh gambar &lt;/p&gt;
+            &lt;p&gt;
+                &lt;img src="laut.jfif" width="500" height="150" alt="Laut"&gt;
+            &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+
+            <p>Berikut merupakan contoh gambar </p>
+            <p>
+                <img src="laut.jfif" width="500" height="150" alt="Laut">
+            </p>
+            
+            </div>
+                <hr>
+                <h1>Apa Itu Link di HTML?</h1>
+                <hr>
+                <div>
+                    <p>Link atau Hyperlink adalah elemen HTML yang berfungsi menghubungkan suatu halaman web ke halaman web yang lain.
+                        Elemen ini bisa diklik.. dan nanti akan membuka halaman lain sesui alamat URL yang diberikan.
+                        <br> Tidak hanya untuk menghubungkan halaman, link juga punya fungsi lain seperti scroll top, download file, menjalankan fungsi javascript, dll.</p>
+                    <h2>Cara Membuat Link di HTML</h2>
+                    <p>Link pada HTML dapa dibuat dengan tag &lt;a&gt;, kemudian tag ini harus memiliki atribut href untuk menentukan alamat URL tujuan dari link.
+                        Bentuk sederhananya seperti ini:</p>
+                    <center>
+                        <img src="link html.png" alt="">
+                    </center>
+            
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Membuat Link di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Berikut merupakan instagram Saya &lt;/p&gt;
+            &lt;a href="https://www.instagram.com/marshallvd/?hl=en" target="_blank">Instagram&gt; &lt;/a&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                <p>Berikut merupakan instagram Saya </p>
+                <a href="https://www.instagram.com/marshallvd/?hl=en" target="_blank">Instagram> </a>
+
+                <p>Link akan ditampilkan dengan warna biru dan garis bawah. Ini adalah style standar dari setiap browser.</p>
+                </div>
+            
+            <hr>
+            <h1>Tabel di HTML</h1>
+            <hr>
+            <div>
+                <center>
+                    <img src="tabel.png" alt="">
+                </center>
+                <p>Ada beberapa tag yang harus diingat untuk membuat tabel di HTML:
+                    <ol>
+                        <li>Tag &lt;table&gt; untuk membungkus tabelnya</li>
+                        <li>Tag &lt;thead&gt; untuk membungkus bagian kepala tabel</li>
+                        <li>Tag &lt;tbody&gt; untuk membungkus bagian body dari tabel</li>
+                        <li>Tag &lt;tr&gt; (tabel row) untuk membuat baris</li>
+                        <li>Tag &lt;td&gt; (table data) untuk membuat sel</li>
+                        <li>Tag &lt;th&gt; (table head) untuk membuat judul pada header</li>
+                </ol>
+                <p> Tag yang paling penting untuk diingat adalah tag &lt;table&gt;, &lt;tr&gt;, dan &lt;td&gt;. Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak.
+                    <br> Berikut merupakan contohnya:</p>
+                </p>
+<code>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Tutorial Membuat Tabel di HTML&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;table border="1"&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+                    &lt;td&gt;baris 1 kolom 2&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+                    &lt;td&gt;baris 2 kolom 2&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+                
+                <p>Berikut merupakan hasil eksekusinya</p>
+                <center>
+                <table border="1">
+                    <tr>
+                        <td>Baris 1 kolom 1</td>
+                        <td>baris 1 kolom 2</td>
+                    </tr>
+                    <tr>
+                        <td>Baris 2 kolom 1</td>
+                        <td>baris 2 kolom 2</td>
+                    </tr>
+                </table>
+                </center>
+        
+        
+            </div>
+            </div>            
+            </div>
+        </article>
+    </div>
+
+        <hr>
+        <h3 >DAFTAR PUSTAKA</h3>
+    
+        <p>[1] Petani Kode (2016). Tutorial HTML untuk Pemula from <a href="https://www.petanikode.com/tutorial/html/" target="_blank"> https://www.petanikode.com/tutorial/html/</a>  <br></p>
+
+
+
+
+    </body>
+
+
+</html>
